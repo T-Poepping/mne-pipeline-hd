@@ -1310,7 +1310,7 @@ def src_connectivity(meeg, target_labels, inverse_method,
                                                  return_generator=True)
 
         sfreq = info['sfreq']  # the sampling frequency
-        con = mne_connectivity.spectral_connectivity(
+        con = mne_connectivity.spectral_connectivity_epochs(
             label_ts, method=con_methods, mode='multitaper', sfreq=sfreq,
             fmin=con_fmin, fmax=con_fmax, faverage=True, mt_adaptive=True,
             n_jobs=n_jobs)
