@@ -96,3 +96,6 @@ ga_interpolate_bads;;Grand-Average;True;;If to interpolate bad channels for the 
 ga_drop_bads;;Grand-Average;True;;If to drop bad channels for the Grand-Average;BoolGui;
 connectivity_vmin;;Connectivity;None;;Minimum value for colormap;FloatGui;{'step': 0.01, 'none_select':True}
 connectivity_vmax;;Connectivity;None;;Maximum value for colormap;FloatGui;{'step': 0.01, 'none_select':True}
+con_facecolor;;Connectivity;None;; Background color of connectivity plot;ComboGui;{'options':['black','white']}
+con_textcolor;;Connectivity;None;; Script color of connectivity plot;ComboGui;{'options':['white','black']}
+con_colormap;;Connectivity;None;; Colormap of connectivity plot;ComboGui;{'options':['hot','cool','seismic','spring','summer','autumn','winter','viridis','plasma','hsv']}
